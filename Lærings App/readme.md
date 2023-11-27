@@ -9,7 +9,7 @@ Efter jeg havde fundet ud af det basale tkinter satte jeg nogen knappet op med m
 Tilsidst programerede jeg at man kunne svare på spørgsmålene og hvis man svarede rigtigt sagede programmet: ```"Rigtigt!"``` og hvis det var forkert: ```"Forkert! Det rigtige svar var {correct_answer}"```
 Derefter ville programmet komme med 4 nye svar inde for det samme emne.
 
-## Flowchart over brugergrænseflade
+## Flowchart Over Brugergrænseflade
 Min app virker ved at man først starter den, så får man mulighederne for at  vælge imellem Addition, subtraktion, mulitplikation, division og  man får også vedvarende muligheder for at kunne slukke, minimere og maksimere appen( Dog skalere UI'et ikke ved maksimereing og minimering).
 Hvis man vælger en af de matematiske emner får man tildelt et spørgsmål og 4 svarmuligheder. hvis man trykker på det rigtige svar får man det at vide og man får igen 4 nye spørgsmål og ligeledes hvis man svarer forkert.
 Læg mærke til at divisions stykkerne er afrundet til nærmeste heltal.
@@ -86,3 +86,5 @@ class DivisionFactory(QuestionFactory):
         answer = result
         return question, answer
 ```
+
+## Test Af Program
