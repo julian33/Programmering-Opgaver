@@ -1,6 +1,6 @@
 # Matematik Lærings App
 I Dette projekt har jeg skulle programmere en lærings app som var bygget op om et designmønster.
-Den læringsapp som jeg har valgt at lave, fokuserer på matematiske emne som Addition, subtraktion, mulitplikation, division. Og i min udvikling af appen har jeg brugt "Factory Method" til at opbygge funktioner med.
+Den læringsapp som jeg har valgt at lave, fokuserer på folkeskole matematik emner ca. 5 klasses niveau som Addition, subtraktion, mulitplikation, division. Og i min udvikling af appen har jeg brugt "Factory Method" til at opbygge funktioner med.
 
 ## Flowchart over brugergrænseflade
 Min app virker ved at man først starter den, så får man mulighederne for at  vælge imellem Addition, subtraktion, mulitplikation, division og  man får også vedvarende muligheder for at kunne slukke, minimere og maksimere appen( Dog skalere UI'et ikke ved maksimereing og minimering).
