@@ -5,9 +5,15 @@ Test
 
 ```mermaid
 graph LR;
-    A --> B;
-    A --> C;
-    C --> D;
+    A[Tænd Appen] --> B[Vælg Addering];
+    A --> C[Vælg Subtraktion];
+    A --> D[Vælg Multiplikation];
+    A --> E[Vælg Division];
+
+    A --> F[Sluk Knap];
+
+
+
 
 ```
 ## Design Patterns
