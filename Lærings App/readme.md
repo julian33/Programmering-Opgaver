@@ -29,4 +29,35 @@ graph LR;
 ![image](https://github.com/julian33/Programmering-Opgaver/assets/12980973/195fa763-c5d0-41bf-81c3-b80fe0e4dfbf)
 
 ## Design Patterns
-Mit valgte designpattern har været "Factory Method". Denne metoder har været god til at splitte et stort kompliceret emne ned i mindre bider som nemt kan vedligeholdes i tilfælde af fremtidige brugerkrav.
+Mit valgte designpattern har været "Factory Method". Denne metoder har været god til at splitte et stort kompliceret emne ned i mindre bider som nemt kan vedligeholdes i tilfælde af fremtidige brugerkrav som skal implementeres.
+Herunder er det vist hvordan jeg har implementeret "Factory Method" Til at opsplitte: Addition, subtraktion, mulitplikation, division
+
+```python
+# Klasse til at generere spørgsmål
+class QuestionFactory:
+    def generate_question(self):
+        pass
+
+# Underklasse til addition
+class AdditionFactory(QuestionFactory):
+    def generate_question(self):
+        num1, num2 = self.generate_numbers()
+        question = f"What is {num1} + {num2}?"
+        answer = num1 + num2
+        return question, answer
+
+    def generate_numbers(self):
+        return random.randint(-10, 10), random.randint(-10, 10)
+
+# Underklasse til subtraktion  
+class SubtractionFactory(QuestionFactory):
+    def generate_question(self):
+        num1, num2 = self.generate_numbers()
+        num1, num2 = max(num1, num2), min(num1, num2)
+        question = f"What is {num1} - {num2}?"
+        answer = num1 - num2
+        return question, answer
+
+    def generate_numbers(self):
+        return random.randint(-10, 10), random.randint(-10, 10)
+```
