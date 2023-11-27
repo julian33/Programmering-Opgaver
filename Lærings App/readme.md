@@ -89,3 +89,5 @@ class DivisionFactory(QuestionFactory):
 
 ## Test Af Program
 Til test af program har jeg lavet skema over alle
+| Input | Forventet output | Faktisk output |
+| a | a | a |
