@@ -6,7 +6,8 @@ Den læringsapp som jeg har valgt at lave, fokuserer på folkeskole matematik em
 Jeg startede med at brainstorm lidt ideer om hvad jeg vil lave, men endte bare med at vælge folkeskolematematik. Inde for folkeskolematematik tænkte jeg at jeg gærne vil have de 4 basale regneformer: Addition, subtraktion, mulitplikation, division.
 Med den ide begyndt jeg at sætte noget simpel tkinter UI op og få nogen knappet til at kunne printe ting og finde ud af hvordan jeg fjernede knapperne igen.
 Efter jeg havde fundet ud af det basale tkinter satte jeg nogen knappet op med matematikemnerne ved hjælp af "actory Method" og fik dem til at gå til åbne hver deres sprøgsmål alt efter valgte emne.
-Tilsidst programerede jeg at man kunne svare på spørgsmålene og hvis man svarede rigtigt sagede programmet: ```python"Rigtigt!"``` og hvis det var forkert: ```python"Forkert! Det rigtige svar var {correct_answer}"```
+Tilsidst programerede jeg at man kunne svare på spørgsmålene og hvis man svarede rigtigt sagede programmet: ```"Rigtigt!"``` og hvis det var forkert: ```"Forkert! Det rigtige svar var {correct_answer}"```
+Derefter ville programmet komme med 4 nye svar inde for det samme emne.
 
 ## Flowchart over brugergrænseflade
 Min app virker ved at man først starter den, så får man mulighederne for at  vælge imellem Addition, subtraktion, mulitplikation, division og  man får også vedvarende muligheder for at kunne slukke, minimere og maksimere appen( Dog skalere UI'et ikke ved maksimereing og minimering).
