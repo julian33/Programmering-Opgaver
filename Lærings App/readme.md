@@ -91,7 +91,7 @@ class DivisionFactory(QuestionFactory):
 Til test af program har jeg lavet skema over alle
 | Input | Forventet output | Faktisk output |
 | ----------- | ----------- | ----------- |
-| Tænder Appen | Appen Tænder | Appen Tænder |
+| Du Tænder Appen | Appen Tænder | Appen Tænder |
 | Trykker på Addering | Adderings spørgsmål fremstår | Adderings spørgsmål fremstår |
 | Trykker på Substrahering | Substraherings spørgsmål fremstår | Substraherings spørgsmål fremstår |
 | Trykker på Multiplicering | Multiplicerings spørgsmål fremstår | Multiplicerings spørgsmål fremstår |
