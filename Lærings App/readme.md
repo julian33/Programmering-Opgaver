@@ -2,6 +2,12 @@
 I Dette projekt har jeg skulle programmere en lærings app som var bygget op om et designmønster.
 Den læringsapp som jeg har valgt at lave, fokuserer på folkeskole matematik emner ca. 5 klasses niveau som Addition, subtraktion, mulitplikation, division. Og i min udvikling af appen har jeg brugt "Factory Method" til at opbygge funktioner med.
 
+## Udviklingsprocess
+Jeg startede med at brainstorm lidt ideer om hvad jeg vil lave, men endte bare med at vælge folkeskolematematik. Inde for folkeskolematematik tænkte jeg at jeg gærne vil have de 4 basale regneformer: Addition, subtraktion, mulitplikation, division.
+Med den ide begyndt jeg at sætte noget simpel tkinter UI op og få nogen knappet til at kunne printe ting og finde ud af hvordan jeg fjernede knapperne igen.
+Efter jeg havde fundet ud af det basale tkinter satte jeg nogen knappet op med matematikemnerne ved hjælp af "actory Method" og fik dem til at gå til åbne hver deres sprøgsmål alt efter valgte emne.
+Tilsidst programerede jeg at man kunne svare på spørgsmålene og hvis man svarede rigtigt sagede programmet: ```python"Rigtigt!"``` og hvis det var forkert: ```python"Forkert! Det rigtige svar var {correct_answer}"```
+
 ## Flowchart over brugergrænseflade
 Min app virker ved at man først starter den, så får man mulighederne for at  vælge imellem Addition, subtraktion, mulitplikation, division og  man får også vedvarende muligheder for at kunne slukke, minimere og maksimere appen( Dog skalere UI'et ikke ved maksimereing og minimering).
 Hvis man vælger en af de matematiske emner får man tildelt et spørgsmål og 4 svarmuligheder. hvis man trykker på det rigtige svar får man det at vide og man får igen 4 nye spørgsmål og ligeledes hvis man svarer forkert.
