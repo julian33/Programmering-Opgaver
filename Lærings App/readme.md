@@ -90,4 +90,12 @@ class DivisionFactory(QuestionFactory):
 ## Test Af Program
 Til test af program har jeg lavet skema over alle
 | Input | Forventet output | Faktisk output |
-| a | a | a |
+| ----------- | ----------- | ----------- |
+| Tænder Appen | Appen Tænder | Appen Tænder |
+| Trykker på Addering | Adderings spørgsmål fremstår | Adderings spørgsmål fremstår |
+| Trykker på Substrahering | Substraherings spørgsmål fremstår | Substraherings spørgsmål fremstår |
+| Trykker på Multiplicering | Multiplicerings spørgsmål fremstår | Multiplicerings spørgsmål fremstår |
+| Trykker på Dividering | Dividerings spørgsmål fremstår | Dividerings spørgsmål fremstår |
+| Trykker på en korrekt svarmulighed | Appen Siger "Korrekt!" og sender dig derefter videre til næste spørgsmål | Appen Siger "Korrekt!" og sender dig derefter videre til næste spørgsmål |
+| Trykker på en forkert svarmulighed | Appen Siger "Forkert! Det rigtige svar var {correct_answer}" og sender dig derefter videre til næste spørgsmål | Appen Siger "Forkert! Det rigtige svar var {correct_answer}" og sender dig derefter videre til næste spørgsmål |
+
