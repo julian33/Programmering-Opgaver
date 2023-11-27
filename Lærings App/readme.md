@@ -5,6 +5,7 @@ Den læringsapp som jeg har valgt at lave, fokuserer på folkeskole matematik em
 ## Flowchart over brugergrænseflade
 Min app virker ved at man først starter den, så får man mulighederne for at  vælge imellem Addition, subtraktion, mulitplikation, division og  man får også vedvarende muligheder for at kunne slukke, minimere og maksimere appen( Dog skalere UI'et ikke ved maksimereing og minimering).
 Hvis man vælger en af de matematiske emner får man tildelt et spørgsmål og 4 svarmuligheder. hvis man trykker på det rigtige svar får man det at vide og man får igen 4 nye spørgsmål og ligeledes hvis man svarer forkert.
+Læg mærke til at divisions stykkerne er afrundet til nærmeste heltal.
 ```mermaid
 graph LR;
     A[Tænd Appen] --> B[Vælg Addering];
