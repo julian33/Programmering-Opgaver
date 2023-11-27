@@ -37,53 +37,45 @@ Herunder er det vist hvordan jeg har implementeret "Factory Method" Til at opspl
 # Klasse til at generere spørgsmål
 class QuestionFactory:
     def generate_question(self):
-        pass
-
-# Underklasse til addition
-class AdditionFactory(QuestionFactory):
-    def generate_question(self):
         num1, num2 = self.generate_numbers()
-        question = f"What is {num1} + {num2}?"
-        answer = num1 + num2
+        question, answer = self.create_question(num1, num2)
         return question, answer
 
     def generate_numbers(self):
         return random.randint(-10, 10), random.randint(-10, 10)
 
+    def create_question(self, num1, num2):
+        raise NotImplementedError("Subclasses must implement create_question method")
+
+# Underklasse til addition
+class AdditionFactory(QuestionFactory):
+    def create_question(self, num1, num2):
+        question = f"What is {num1} + {num2}?"
+        answer = num1 + num2
+        return question, answer
+
 # Underklasse til subtraktion  
 class SubtractionFactory(QuestionFactory):
-    def generate_question(self):
-        num1, num2 = self.generate_numbers()
+    def create_question(self, num1, num2):
         num1, num2 = max(num1, num2), min(num1, num2)
         question = f"What is {num1} - {num2}?"
         answer = num1 - num2
         return question, answer
 
-    def generate_numbers(self):
-        return random.randint(-10, 10), random.randint(-10, 10)
-
 # Underklasser til multiplikation
 class MultiplicationFactory(QuestionFactory):
-    def generate_question(self):
-        num1, num2 = self.generate_numbers()
+    def create_question(self, num1, num2):
         question = f"What is {num1} * {num2}?"
         answer = num1 * num2
         return question, answer
 
-    def generate_numbers(self):
-        return random.randint(-10, 10), random.randint(-10, 10)
-
 # Underklasser til division
 class DivisionFactory(QuestionFactory):
-    def generate_question(self):
-        num1, num2 = self.generate_numbers()
+    def create_question(self, num1, num2):
         if num2 == 0:
             num1, num2 = self.generate_numbers()
         result = num1 // num2
         question = f"What is {num1} / {num2}?"
         answer = result
         return question, answer
-
-    def generate_numbers(self):
-        return random.randint(-10, 10), random.randint(-10, 10)
 ```
